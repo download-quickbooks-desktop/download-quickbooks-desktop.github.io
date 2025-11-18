@@ -51,22 +51,29 @@
     h1{font-size:2rem;margin:0 0 .25rem}
     .lead{color:var(--muted);margin-bottom:1rem;font-size:1.05rem}
     .card{background:white;border:1px solid #e6eef8;padding:1.5rem;border-radius:14px;box-shadow:0 6px 25px rgba(20,20,30,0.05)}
-   .btn{
-  display: inline-block;
-  padding: 0.8rem 1.6rem;
+  .btn{
+  display: block;
+  padding: 0.55rem 1.2rem; /* smaller padding */
   background: var(--accent);
   color: #fff;
-  font-size: 1.05rem;
+  font-size: 0.95rem; /* slightly smaller text */
   font-weight: 600;
-  border-radius: 10px;
+  border-radius: 8px;
   text-decoration: none;
   transition: 0.3s ease;
   
   /* Center the button */
-  margin: 20px auto;
-  text-align: center;
-  display: block;
+  margin: 15px auto;
+  width: fit-content; /* makes the button small according to text */
 }
+
+/* Hover */
+.btn:hover{
+  background: #1f5aa5;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
 
 /* Hover Effect */
 .btn:hover{
